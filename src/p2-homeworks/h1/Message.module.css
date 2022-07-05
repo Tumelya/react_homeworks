@@ -1,3 +1,74 @@
-.message {
+.common {
+    width: 600px;
+    display: flex;
+    align-items: flex-end;
+    /*background-color: rgb(226, 226, 226);*/
+}
+
+img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    /* Радиус скругления */
+    box-shadow: 0 0 0 2px rgb(226, 226, 226), 0 0 1px #333;
+    /* Параметры теней */
+}
+
+.messageForm {
+    width: 500px;
+    height: 150px;
+    border-radius: 30px 30px 30px 0px;
+    background-color: #333;
 
 }
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent #333 transparent;
+}
+
+p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    font-size: 30px;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    padding-right: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.name {
+    height: 25%;
+    padding-top: 10px;
+    color: blueviolet;
+}
+
+.mess {
+    text-align: left;
+    width: 65%;
+    color: white;
+
+}
+
+.time {
+    text-align: right;
+    width: 10%;
+    color: rgb(167, 159, 175);
+    font-size: 25px;
+}
+
+
