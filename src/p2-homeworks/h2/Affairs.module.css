@@ -1,3 +1,32 @@
-.someClass {
+.priorityButton, .deleteButton {
+    background-color: white;
+    color: black;
+    border: 1.5px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 2px;
+}
+.priorityButton {
+    width: 60px;
+    height: 25px;
+}
+.priorityButton:hover, .deleteButton:hover{
+    background-color: #e4d0f7;
+}
+.priorityButton:active, .deleteButton:active {
+    background-color: #bf83f7;
+}
+.deleteButton {
+    width: 25px;
+    height: 25px;
+    color: #655773;
+}
 
+.priority {
+    color: #655773;
+    width: 100px;
+}
+
+.nameTd {
+    width: 130px;
 }
