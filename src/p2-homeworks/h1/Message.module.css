@@ -51,17 +51,15 @@ p {
     justify-content: flex-end;
 }
 
-.name {
-    height: 25%;
-    padding-top: 10px;
-    color: blueviolet;
-}
-
 .mess {
     text-align: left;
     width: 65%;
     color: white;
 
+}
+
+.name {
+    color: blueviolet;
 }
 
 .time {

@@ -15,7 +15,6 @@ function HW1() {
             <hr/>
             <h3>HomeWork 1</h3>
             <hr/>
-            {/*should work (должно работать)*/}
 
             <Message
                 avatar={messageData.avatar}
