@@ -1,4 +1,4 @@
-import React, {KeyboardEventHandler} from 'react'
+import React, {KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
@@ -7,12 +7,12 @@ type GreetingPropsType = {
     addUser: () => void
     error: string
     totalUsers: number
-    //onEnter: (e: KeyboardEventHandler<HTMLInputElement>) => void
+    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void
 }
 
 // презентационная компонента (для верстальщика)
 export const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers}) => {
+    {name, setNameCallback, addUser, error, totalUsers, onEnter}) => {
 
     return (
         <div>
@@ -22,7 +22,7 @@ export const Greeting: React.FC<GreetingPropsType> = (
                     value={name}
                     onChange={setNameCallback}
                     onBlur={setNameCallback}
-                    //onKeyDown={onEnter}
+                    onKeyDown={onEnter}
                 />
                 <button onClick={addUser} disabled={!name}>add</button>
                 <span>{totalUsers}</span>
