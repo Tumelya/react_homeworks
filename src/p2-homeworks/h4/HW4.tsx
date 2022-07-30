@@ -22,7 +22,7 @@ function HW4() {
     return (
         <div>
             <hr/>
-            homeworks 4
+            <h3>HomeWork 4</h3>
 
             <div className={s.column}>
                 <SuperInputText
@@ -39,9 +39,7 @@ function HW4() {
 
                 {/*----------------------------------------------------*/}
 
-                <SuperButton>
-                    default
-                </SuperButton>
+                <SuperButton>default</SuperButton>
 
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
@@ -50,9 +48,7 @@ function HW4() {
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
-                <SuperButton disabled>
-                    disabled
-                </SuperButton>
+                <SuperButton disabled>disabled</SuperButton>
 
                 {/*----------------------------------------------------*/}
 
